@@ -1,0 +1,10 @@
+ <view  wx:if="{{show}}" >
+ <image  style="width: 100px; height: 100px;margin-left:140px; background-color: #eeeeee;" mode="scaleToFill" src="{{src}}"></image>
+ <button 
+    style='width:300rpx;'
+    wx:if="{{canIUse}}" 
+    open-type="getUserInfo" 
+    bindgetuserinfo="bindGetUserInfo"
+>授权登录</button>
+<view wx:else>请升级微信版本</view>
+</view>
